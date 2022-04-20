@@ -1,0 +1,36 @@
+.signup-container {
+    max-width: 1000px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 900px;
+
+}
+
+.signup-form-button {
+    width: 85%;
+    margin-top: 15px;
+}
+
+.signup-form-button[disabled], .signup-form-button[disabled]:hover, .signup-form-button[disabled]:focus {
+    opacity: 0.6;
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.signup-form input {
+    margin-bottom: 3px;
+}
+
+
+.aside-picture {
+    float: left;
+    margin-left: -25%;
+    width: 45%;
+}
+
+.content-container {
+    margin-left: 10%;
+    float: right;
+    width: 530px;
+}
