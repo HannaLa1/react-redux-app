@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="107c1e07-5dff-4e01-8fa8-6bf7cb9cbb2a" name="Changes" comment="Added some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.0f73b380aa6517b55ce9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.ee5112899a095e346002.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.9fbc9e686ec0b51c81e1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/auth-verify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/auth-verify.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/eventBus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/eventBus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/SignIn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/history/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/history/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user-board/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-board/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
       <recent name="D:\react-app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="D:\react-app" />
@@ -113,7 +115,9 @@
       <workItem from="1650841488783" duration="29000" />
       <workItem from="1650841608842" duration="235000" />
       <workItem from="1650877464371" duration="424000" />
-      <workItem from="1650879268304" duration="1175000" />
+      <workItem from="1650879268304" duration="2236000" />
+      <workItem from="1650881548341" duration="1204000" />
+      <workItem from="1650892427057" duration="2759000" />
     </task>
     <task id="LOCAL-00001" summary="Added some changes">
       <created>1650841303905</created>

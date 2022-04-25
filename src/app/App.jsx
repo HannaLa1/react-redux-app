@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Router, Route, Link } from "react-router-dom";
+import { Router, Route, Switch, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import eventBus from "../../common/eventBus";
-import Home from "../home/Home";
-import SignIn from "../auth/SignIn";
-import SignUp from "../auth/SignUp";
-import Profile from "../user-board/Profile";
-import AuthVerify from "../../common/auth-verify";
-import {history} from './history/history';
+import eventBus from "../common/eventBus";
+import Home from "../components/home/Home";
+import SignIn from "../components/auth/SignIn";
+import SignUp from "../components/auth/SignUp";
+import Profile from "../components/user-board/Profile";
+import AuthVerify from "../common/auth-verify";
+
+import { logout } from "../actions/auth";
+import { clearMessage } from "../actions/message";
+
+import {history} from '../history/history';
 
 
 class App extends Component {
