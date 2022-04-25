@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Router, Switch, Route, Link } from "react-router-dom";
+import { Router, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -114,7 +114,7 @@ class App extends Component {
                         <Switch>
                             <Route exact path={["/", "/home"]} component={Home} />
                             <Route exact path="/signIn" component={SignIn} />
-                            <Route exact path="/register" component={SignUp} />
+                            <Route exact path="/signUp" component={SignUp} />
                             <Route exact path="/profile" component={Profile} />
                         </Switch>
                     </div>

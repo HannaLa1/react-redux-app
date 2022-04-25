@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
 import { connect } from "react-redux";
 
-export class Profile extends Component {
+class Profile extends Component {
 
     render() {
         const { user: currentUser } = this.props;
