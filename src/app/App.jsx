@@ -1,23 +1,21 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Router, Route, Switch, Link } from "react-router-dom";
+import React, {Component} from "react";
+import {connect} from "react-redux";
+import {Link, Route, Router, Switch} from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import eventBus from "../common/eventBus";
-import Home from "../components/home/Home";
 import SignIn from "../components/auth/SignIn";
 import SignUp from "../components/auth/SignUp";
 import Profile from "../components/user-board/Profile";
-import AuthVerify from "../common/auth-verify";
 
-import { logout } from "../actions/auth";
-import { clearMessage } from "../actions/message";
+import {logout} from "../actions/auth";
+import {clearMessage} from "../actions/message";
 
 import {history} from '../history/history';
 
-
 class App extends Component {
+
     constructor(props) {
         super(props);
         this.logOut = this.logOut.bind(this);
@@ -27,7 +25,7 @@ class App extends Component {
         };
 
         history.listen((location) => {
-            props.dispatch(clearMessage()); 
+            props.dispatch(clearMessage());
         });
     }
 
@@ -52,8 +50,6 @@ class App extends Component {
     logOut() {
         this.props.dispatch(logout());
         this.setState({
-            showModeratorBoard: false,
-            showAdminBoard: false,
             currentUser: undefined,
         });
     }
@@ -66,23 +62,8 @@ class App extends Component {
                 <div>
                     <nav className="navbar navbar-expand navbar-dark bg-dark">
                         <Link to={"/"} className="navbar-brand">
-                            REACT APP
+                            REACT REDUX APP
                         </Link>
-                        <div className="navbar-nav mr-auto">
-                            <li className="nav-item">
-                                <Link to={"/home"} className="nav-link">
-                                    Home
-                                </Link>
-                            </li>
-
-                            {currentUser && (
-                                <li className="nav-item">
-                                    <Link to={"/user"} className="nav-link">
-                                        User
-                                    </Link>
-                                </li>
-                            )}
-                        </div>
 
                         {currentUser ? (
                             <div className="navbar-nav ml-auto">
@@ -116,14 +97,11 @@ class App extends Component {
 
                     <div className="container mt-3">
                         <Switch>
-                            <Route exact path={["/", "/home"]} component={Home} />
                             <Route exact path="/signIn" component={SignIn} />
                             <Route exact path="/signUp" component={SignUp} />
                             <Route exact path="/profile" component={Profile} />
                         </Switch>
                     </div>
-
-                     <AuthVerify logOut={this.logOut}/> 
                 </div>
             </Router>
         );

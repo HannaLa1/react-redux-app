@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import UserService from "../../services/user-service";
-
+import React, {Component} from "react";
+import UtilsAPIService from "../../services/utilsAPI";
 
 
 export default class Home extends Component {
@@ -13,7 +12,7 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        UserService.getPublicContent().then(
+        UtilsAPIService.getPublicContent().then(
             response => {
                 this.setState({
                     content: response.data

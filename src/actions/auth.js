@@ -1,8 +1,8 @@
-import AuthService from "../services/auth-service";
+import UtilsAPIService from "../services/utilsAPI";
 import {LOGIN_FAIL, LOGIN_SUCCESS, LOGOUT, REGISTER_FAIL, REGISTER_SUCCESS, SET_MESSAGE} from "../constants";
 
 export const signUp = (username, password, confirmPassword, email, firstName, lastName, imageUrl) => (dispatch) => {
-    return AuthService.signUp(username, password, confirmPassword, email, firstName, lastName, imageUrl).then(
+    return UtilsAPIService.signUp(username, password, confirmPassword, email, firstName, lastName, imageUrl).then(
         (response) => {
             dispatch({
                 type: REGISTER_SUCCESS,
@@ -38,7 +38,7 @@ export const signUp = (username, password, confirmPassword, email, firstName, la
 };
 
 export const signIn = (email, password) => (dispatch) => {
-    return AuthService.signIn(email, password).then(
+    return UtilsAPIService.signIn(email, password).then(
         (data) => {
             dispatch({
                 type: LOGIN_SUCCESS,
@@ -70,7 +70,7 @@ export const signIn = (email, password) => (dispatch) => {
 };
 
 export const logout = () => (dispatch) => {
-    AuthService.logout();
+    UtilsAPIService.logout();
 
     dispatch({
         type: LOGOUT,

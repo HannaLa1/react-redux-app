@@ -16,9 +16,9 @@ label {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 2px rgba(239, 124, 228, 0.53);
+    -webkit-box-shadow: 0px 2px 2px rgba(239, 124, 228, 0.53);
+    box-shadow: 0px 2px 2px rgba(239, 124, 228, 0.53);
 }
 
 .profile-img-card {

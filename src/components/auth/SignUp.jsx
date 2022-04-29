@@ -187,12 +187,6 @@ class SignUp extends Component {
         return (
             <div className="col-md-12">
                 <div className="card card-container">
-                    <img
-                        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                        alt="profile-img"
-                        className="profile-img-card"
-                    />
-
                     <Form
                         onSubmit={this.handleSignUp}
                         ref={(c) => {
@@ -228,7 +222,7 @@ class SignUp extends Component {
                                 <div className="form-group">
                                     <label htmlFor="confirmPassword">Confirm password</label>
                                     <Input
-                                        type="confirmPassword"
+                                        type="password"
                                         className="form-control"
                                         name="confirmPassword"
                                         value={this.state.confirmPassword}
@@ -280,7 +274,7 @@ class SignUp extends Component {
                                         className="form-control"
                                         name="imageUrl"
                                         value={this.state.imageUrl}
-                                        onChange={this.onChangeImageUrl()}
+                                        onChange={this.onChangeImageUrl}
                                         validations={[required, imageUrl]}
                                     />
                                 </div>
