@@ -6,7 +6,7 @@ const devMode = true;
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
-    entry: './src/index.jsx',
+    entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath: "/",
@@ -32,7 +32,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
-                    presets:["@babel/preset-env"]
+                    presets:["@babel/preset-react", "@babel/preset-env"]
                 }
             },
             {

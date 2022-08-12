@@ -1,0 +1,11 @@
+.aside-picture {
+    height: 100%;
+    width: 100%;
+}
+
+.aside-picture img {
+    width:250px;
+    object-fit:cover;
+    height: auto;
+    padding-left: 10px;
+}

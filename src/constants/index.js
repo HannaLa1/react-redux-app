@@ -1,23 +1,19 @@
 export const BASE_URL = "http://localhost:8080/api/v1";
 
-export const ROLE_ADMIN = 'ADMIN'
-
-export const ACCESS_TOKEN_HEADER_KEY = 'Authorization-Access-Token'
-export const REFRESH_TOKEN_HEADER_KEY = 'Authorization-Refresh-Token'
-export const TOKEN_TYPE_HEADER_KEY = 'Token-Type'
-export const VALID_TOKEN_TYPE_VALUE = 'bearer'
-export const GRANT_TYPE_HEADER_KEY = 'Grant-Type'
-
 export const ACCESS_TOKEN = 'accessToken'
-export const REFRESH_TOKEN = 'refreshToken'
 
-export const TOKEN = 'token'
+export const USER_ID = 'id'
+export const ROLE_ADMIN = 'ROLE_ADMIN'
+export const ROLE_USER = 'ROLE_USER'
+export const ROLE_SELLER = 'ROLE_SELLER'
+export const SUCCESS = 'success'
+export const ERROR = 'error'
 
-export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
-export const REGISTER_FAIL = "REGISTER_FAIL";
-export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
-export const LOGIN_FAIL = "LOGIN_FAIL";
-export const LOGOUT = "LOGOUT";
 
-export const SET_MESSAGE = "SET_MESSAGE";
-export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
+export const NAME_MIN_LENGTH = 3;
+export const NAME_MAX_LENGTH = 25;
+
+export const EMAIL_MAX_LENGTH = 30;
+
+export const PASSWORD_MIN_LENGTH = 6;
+export const PASSWORD_MAX_LENGTH = 15;

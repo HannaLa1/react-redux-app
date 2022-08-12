@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import UtilsAPIService from "../../services/utilsAPI";
+import UtilsAPIService from "../../util/UtilsAPI";
 
 
 export default class Home extends Component {

@@ -1,0 +1,57 @@
+.login-form-button {
+    width: 100%;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.page-title {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.page-title:hover {
+    color: #96abc5;
+    border-color: #a5a5a5;
+}
+
+.page-title-text {
+    font-size: 80%;
+    font-weight: bolder;
+    text-align: center;
+    padding: 3px 3px 15px 15px;
+    color: #2a2727;
+}
+
+.page-title-text:hover {
+    color: #6b91c2;
+    border-color: #a5a5a5;
+}
+
+.login-content {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 450px;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: middle;
+    position: relative;
+    padding: 20px;
+}
+
+.signup-link {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+}
+
+.login-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.65);
+}
